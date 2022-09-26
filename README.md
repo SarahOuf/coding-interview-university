@@ -63,17 +63,6 @@
         <strong>Special thanks to:</strong>
     </p>
     <p>
-        <a href="https://oss.capital/">
-            <div>
-                <img src="https://d3j2pkmjtin6ou.cloudfront.net/sponsors/oss-capital.svg" width="350" alt="OSS Capital">
-            </div>
-            <div>
-                <sup><strong>Founded in 2018, OSS Capital is the first and only venture capital platform focused<br>exclusively on supporting early-stage COSS (commercial open source) startup founders.</strong></sup>
-            </div>
-        </a>
-    </p>
-    <br />
-    <p>
         <a href="https://www.gitpod.io/?utm_campaign=jwasham&utm_medium=referral&utm_content=coding-interview-university&utm_source=github">
             <div>
                 <img src="https://d3j2pkmjtin6ou.cloudfront.net/sponsors/gitpod-logo-light-theme.svg" width="300" alt="Gitpod">
@@ -142,7 +131,7 @@ software development/engineering roles.
   - [Binary search](#binary-search)
   - [Bitwise operations](#bitwise-operations)
 - [Trees](#trees)
-  - [Trees - Notes & Background](#trees---notes--background)
+  - [Trees - Intro](#trees---intro)
   - [Binary search trees: BSTs](#binary-search-trees-bsts)
   - [Heap / Priority Queue / Binary Heap](#heap--priority-queue--binary-heap)
   - balanced search trees (general concept, not details)
@@ -271,25 +260,29 @@ If you're open in a code editor that understands markdown, you'll see everything
 
 Create a new branch so you can check items like this, just put an x in the brackets: [x]
 
-    Fork a branch and follow the commands below
+1. **_Fork the GitHub repo:_** `https://github.com/jwasham/coding-interview-university` by clicking on the Fork button.
 
-Fork the GitHub repo https://github.com/jwasham/coding-interview-university by clicking on the Fork button.
+   ![Fork the GitHub repo](https://d3j2pkmjtin6ou.cloudfront.net/fork-button.png)
 
-Clone to your local repo:
+1. Clone to your local repo:
 
-    git clone git@github.com:<your_github_username>/coding-interview-university.git
-    cd coding-interview-university
-    git checkout -b progress
-    git remote add jwasham https://github.com/jwasham/coding-interview-university
-    git fetch --all
+   ```
+   git clone git@github.com:<your_github_username>/coding-interview-university.git
+   cd coding-interview-university
+   git checkout -b progress
+   git remote add jwasham https://github.com/jwasham/coding-interview-university
+   git fetch --all
+   ```
 
-Mark all boxes with X after you completed your changes:
+1. Mark all boxes with X after you completed your changes:
 
-    git add .
-    git commit -m "Marked x"
-    git rebase jwasham/main
-    git push --set-upstream origin progress
-    git push --force
+   ```
+   git add .
+   git commit -m "Marked x"
+   git rebase jwasham/main
+   git push --set-upstream origin progress
+   git push --force
+   ```
 
 ## Don't feel you aren't smart enough
 
@@ -335,11 +328,8 @@ You may not need it, but here are some sites for learning a new language:
 
 - [Exercism](https://exercism.org/tracks)
 - [Codewars](http://www.codewars.com)
-- [Codility](https://codility.com/programmers/)
-- [HackerEarth](https://www.hackerearth.com/)
-- [Sphere Online Judge (spoj)](http://www.spoj.com/)
-- [Codechef](https://www.codechef.com/)
-- [Codeforces](https://codeforces.com/)
+- [HackerEarth](https://www.hackerearth.com/for-developers/)
+- [Scaler Topics (Java, C++)](https://www.scaler.com/topics/)
 
 ### For your Coding Interview
 
@@ -572,24 +562,22 @@ Coding Interview Question Videos:
   - Good explanations of solution and the code
   - You can watch several in a short time
 - [FisherCoder - LeetCode Solutions](https://youtube.com/FisherCoder)
-- [Neetcode - BLIND 75 LeetCode Solutions](https://www.youtube.com/watch?v=KLlXCFG5TnA&list=PLot-Xpze53ldVwtstag2TL4HQhAnC8ATf)
-  - Good explanations of solution and the python code
-  - Also checkout [excel sheet](https://docs.google.com/spreadsheets/d/1A2PaQKcdwO_lwxz9bAnxXnIQayCouZP6d-ENrBz_NXc/edit#gid=0) for all question list
-  - [Github links](https://github.com/neetcode-gh/leetcode) for all solutions code
-  - [Neetcode 150](https://neetcode.io/)
 
-Challenge sites:
+Challenge/Practice sites:
 
 - [LeetCode](https://leetcode.com/)
   - My favorite coding problem site. It's worth the subscription money for the 1-2 months you'll likely be preparing.
   - See Nick White and FisherCoder Videos above for code walk-throughs.
 - [HackerRank](https://www.hackerrank.com/)
 - [TopCoder](https://www.topcoder.com/)
+- [Codeforces](https://codeforces.com/)
+- [Codility](https://codility.com/programmers/)
 - [Geeks for Geeks](https://practice.geeksforgeeks.org/explore/?page=1)
 - [InterviewBit](https://www.interviewbit.com/)
-- [Project Euler](https://projecteuler.net/)
 - [AlgoExpert](https://www.algoexpert.io/product)
   - Created by Google engineers, this is also an excellent resource to hone your skills.
+- [Project Euler](https://projecteuler.net/)
+  - very math focused, and not really suited for coding interviews
 
 ## Let's Get Started
 
@@ -613,6 +601,7 @@ But don't forget to do coding problems from above while you learn!
   - [Computational Complexity: Section 1](https://www.topcoder.com/thrive/articles/Computational%20Complexity%20part%20one)
   - [Computational Complexity: Section 2](https://www.topcoder.com/thrive/articles/Computational%20Complexity%20part%20two)
 - [ ] [Cheat sheet](http://bigocheatsheet.com/)
+- [ ] [[Review] Big-O notation in 5 minutes (video)](https://youtu.be/__vX2sjlpXU)
 
 Well, that's about enough of that.
 
@@ -660,6 +649,7 @@ if you can identify the runtime complexity of different algorithms. It's a super
     - [ ] [Singly Linked Lists (video)](https://www.coursera.org/lecture/data-structures/singly-linked-lists-kHhgK)
     - [ ] [CS 61B - Linked Lists 1 (video)](https://archive.org/details/ucberkeley_webcast_htzJdKoEmO0)
     - [ ] [CS 61B - Linked Lists 2 (video)](https://archive.org/details/ucberkeley_webcast_-c4I3gFYe3w)
+    - [ ] [[Review] Linked lists in 4 minutes (video)](https://youtu.be/F8AbOfQwl1c)
   - [ ] [C Code (video)](https://www.youtube.com/watch?v=QN6FPiD0Gzo) - not the whole video, just portions about Node struct and memory allocation
   - [ ] Linked List vs Arrays:
     - [Core Linked Lists Vs Arrays (video)](https://www.coursera.org/lecture/data-structures-optimizing-performance/core-linked-lists-vs-arrays-rjBs9)
@@ -668,7 +658,7 @@ if you can identify the runtime complexity of different algorithms. It's a super
   - [ ] Gotcha: you need pointer to pointer knowledge:
         (for when you pass a pointer to a function that may change the address where that pointer points)
         This page is just to get a grasp on ptr to ptr. I don't recommend this list traversal style. Readability and maintainability suffer due to cleverness.
-    - [Pointers to Pointers](https://www.eskimo.com/~scs/cclass/int/sx8.html)
+  - [Pointers to Pointers](https://www.eskimo.com/~scs/cclass/int/sx8.html)
   - [ ] Implement (I did with tail pointer & without):
     - [ ] size() - returns number of data elements in list
     - [ ] empty() - bool returns true if empty
@@ -691,12 +681,14 @@ if you can identify the runtime complexity of different algorithms. It's a super
 - ### Stack
 
   - [ ] [Stacks (video)](https://www.coursera.org/lecture/data-structures/stacks-UdKzQ)
+  - [ ] [[Review] Stacks in 3 minutes (video)](https://youtu.be/KcT3aVgrrpU)
   - [ ] Will not implement. Implementing with array is trivial
 
 - ### Queue
 
   - [ ] [Queue (video)](https://www.coursera.org/lecture/data-structures/queues-EShpq)
   - [ ] [Circular buffer/FIFO](https://en.wikipedia.org/wiki/Circular_buffer)
+  - [ ] [[Review] Queues in 3 minutes (video)](https://youtu.be/D6gu-_tmEpQ)
   - [ ] Implement using linked-list, with tail pointer:
     - enqueue(value) - adds value at position at tail
     - dequeue() - returns value and removes least recently added element (front)
@@ -724,6 +716,7 @@ if you can identify the runtime complexity of different algorithms. It's a super
     - [ ] [PyCon 2017: The Dictionary Even Mightier (video)](https://www.youtube.com/watch?v=66P5FMkWoVU)
     - [ ] [(Advanced) Randomization: Universal & Perfect Hashing (video)](https://www.youtube.com/watch?v=z0lJ2k0sl1g&list=PLUl4u3cNGP6317WaSNfmCvGym2ucw3oGp&index=11)
     - [ ] [(Advanced) Perfect hashing (video)](https://www.youtube.com/watch?v=N0COwN14gt0&list=PL2B4EEwhKD-NbwZ4ezj7gyc_3yNrojKM9&index=4)
+    - [ ] [[Review] Hash tables in 4 minutes (video)](https://youtu.be/knV86FlSXJ8)
 
   - [ ] Online Courses:
 
@@ -749,6 +742,7 @@ if you can identify the runtime complexity of different algorithms. It's a super
   - [ ] [Binary Search (video)](https://www.khanacademy.org/computing/computer-science/algorithms/binary-search/a/binary-search)
   - [ ] [detail](https://www.topcoder.com/thrive/articles/Binary%20Search)
   - [ ] [blueprint](https://leetcode.com/discuss/general-discussion/786126/python-powerful-ultimate-binary-search-template-solved-many-problems)
+  - [ ] [[Review] Binary search in 3 minutes (video)](https://youtu.be/B25Gu5r0xUg)
   - [ ] Implement:
     - binary search (on sorted array of integers)
     - binary search using recursion
@@ -782,12 +776,10 @@ if you can identify the runtime complexity of different algorithms. It's a super
 
 ## Trees
 
-- ### Trees - Notes & Background
+- ### Trees - Intro
 
-  - [ ] [Series: Trees (video)](https://www.coursera.org/lecture/data-structures/trees-95qda)
-  - basic tree construction
-  - traversal
-  - manipulation algorithms
+  - [ ] [Intro to Trees (video)](https://www.coursera.org/lecture/data-structures/trees-95qda)
+  - [ ] [Tree Traversal (video)](https://www.coursera.org/lecture/data-structures/tree-traversal-fr51b)
   - [ ] [BFS(breadth-first search) and DFS(depth-first search) (video)](https://www.youtube.com/watch?v=uWL6FJhq5fM)
     - BFS notes:
       - level order (BFS, using queue)
@@ -801,6 +793,9 @@ if you can identify the runtime complexity of different algorithms. It's a super
       - inorder (DFS: left, self, right)
       - postorder (DFS: left, right, self)
       - preorder (DFS: self, left, right)
+  - [ ] [[Review] Breadth-first search in 4 minutes (video)](https://youtu.be/HZ5YTanv5QE)
+  - [ ] [[Review] Depth-first search in 4 minutes (video)](https://youtu.be/Urx87-NMm6c)
+  - [ ] [[Review] Tree Traversal (playlist) in 11 minutes (video)](https://www.youtube.com/playlist?list=PL9xmBV_5YoZO1JC2RgEi04nLy6D-rKk6b)
 
 - ### Binary search trees: BSTs
 
@@ -835,7 +830,6 @@ if you can identify the runtime complexity of different algorithms. It's a super
   - visualized as a tree, but is usually linear in storage (array, linked list)
   - [ ] [Heap](<https://en.wikipedia.org/wiki/Heap_(data_structure)>)
   - [ ] [Introduction (video)](https://www.coursera.org/lecture/data-structures/introduction-2OpTs)
-  - [ ] [Naive Implementations (video)](https://www.coursera.org/learn/data-structures/lecture/z3l9N/naive-implementations)
   - [ ] [Binary Trees (video)](https://www.coursera.org/learn/data-structures/lecture/GRV2q/binary-trees)
   - [ ] [Tree Height Remark (video)](https://www.coursera.org/learn/data-structures/supplement/S5xxz/tree-height-remark)
   - [ ] [Basic Operations (video)](https://www.coursera.org/learn/data-structures/lecture/0g1dl/basic-operations)
@@ -847,6 +841,7 @@ if you can identify the runtime complexity of different algorithms. It's a super
   - [ ] [MIT: Heaps and Heap Sort (video)](https://www.youtube.com/watch?v=B7hVxCmfPtM&index=4&list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb)
   - [ ] [CS 61B Lecture 24: Priority Queues (video)](https://archive.org/details/ucberkeley_webcast_yIUFT6AKBGE)
   - [ ] [Linear Time BuildHeap (max-heap)](https://www.youtube.com/watch?v=MiyLo8adrWw)
+  - [ ] [[Review] Heap (playlist) in 13 minutes (video)](https://www.youtube.com/playlist?list=PL9xmBV_5YoZNsyqgPW-DNwUeT8F8uhWc6)
   - [ ] Implement a max-heap:
     - [ ] insert
     - [ ] sift_up - needed for insert
@@ -886,7 +881,7 @@ if you can identify the runtime complexity of different algorithms. It's a super
 
 - [ ] [Sedgewick - Quicksort (4 videos)](https://www.coursera.org/learn/algorithms-part1/home/week/3)
 
-  - [ ] [1. Quicksort](https://www.coursera.org/learn/algorithms-part1/lecture/vjvnC/quicksort)
+  - [ ] [1. Quicksort](https://www.coursera.org/lecture/algorithms-part1/quicksort-vjvnC)
   - [ ] [2. Selection](https://www.coursera.org/lecture/algorithms-part1/selection-UQxFT)
   - [ ] [3. Duplicate Keys](https://www.coursera.org/lecture/algorithms-part1/duplicate-keys-XvjPd)
   - [ ] [4. System Sorts](https://www.coursera.org/lecture/algorithms-part1/system-sorts-QBNZ7)
@@ -897,6 +892,7 @@ if you can identify the runtime complexity of different algorithms. It's a super
   - [ ] [CS 61B Lecture 30: Sorting II (video)](https://archive.org/details/ucberkeley_webcast_2hTY3t80Qsk)
   - [ ] [CS 61B Lecture 32: Sorting III (video)](https://archive.org/details/ucberkeley_webcast_Y6LOLpxg6Dc)
   - [ ] [CS 61B Lecture 33: Sorting V (video)](https://archive.org/details/ucberkeley_webcast_qNMQ4ly43p4)
+  - [ ] [CS 61B 2014-04-21: Radix Sort(video)](https://archive.org/details/ucberkeley_webcast_pvbBMd-3NoI)
 
 - [ ] [Bubble Sort (video)](https://www.youtube.com/watch?v=P00xJgWzz2c&index=1&list=PL89B61F78B552C1AB)
 - [ ] [Analyzing Bubble Sort (video)](https://www.youtube.com/watch?v=ni_zk257Nqo&index=7&list=PL89B61F78B552C1AB)
@@ -915,6 +911,15 @@ if you can identify the runtime complexity of different algorithms. It's a super
   - [ ] [Implementation (C)](http://www.cs.yale.edu/homes/aspnes/classes/223/examples/randomization/quick.c)
   - [ ] [Implementation (C)](https://github.com/jwasham/practice-c/blob/master/quick_sort/quick_sort.c)
   - [ ] [Implementation (Python)](https://github.com/jwasham/practice-python/blob/master/quick_sort/quick_sort.py)
+
+- [ ] [[Review] Sorting (playlist) in 18 minutes](https://www.youtube.com/playlist?list=PL9xmBV_5YoZOZSbGAXAPIq1BeUf4j20pl)
+
+  - [ ] [Quick sort in 4 minutes (video)](https://youtu.be/Hoixgm4-P4M)
+  - [ ] [Heap sort in 4 minutes (video)](https://youtu.be/2DmK_H7IdTo)
+  - [ ] [Merge sort in 3 minutes (video)](https://youtu.be/4VqmGXwpLqc)
+  - [ ] [Bubble sort in 2 minutes (video)](https://youtu.be/xli_FI7CuzA)
+  - [ ] [Selection sort in 3 minutes (video)](https://youtu.be/g-PGLbMth_g)
+  - [ ] [Insertion sort in 2 minutes (video)](https://youtu.be/JU767SDMDvA)
 
 - [ ] Implement:
 
@@ -982,6 +987,8 @@ Graphs can be used to represent many problems in computer science, so this secti
   - [ ] [CS 61B 2014: Weighted graphs (video)](https://archive.org/details/ucberkeley_webcast_zFbq8vOZ_0k)
   - [ ] [Greedy Algorithms: Minimum Spanning Tree (video)](https://www.youtube.com/watch?v=tKwnms5iRBU&index=16&list=PLUl4u3cNGP6317WaSNfmCvGym2ucw3oGp)
   - [ ] [Strongly Connected Components Kosaraju's Algorithm Graph Algorithm (video)](https://www.youtube.com/watch?v=RpgcYiky7uw)
+  - [ ] [[Review] Shortest Path Algorithms (playlist) in 16 minutes (video)](https://www.youtube.com/playlist?list=PL9xmBV_5YoZO-Y-H3xIC9DGSfVYJng9Yw)
+  - [ ] [[Review] Minimum Spanning Trees (playlist) in 4 minutes (video)](https://www.youtube.com/playlist?list=PL9xmBV_5YoZObEi3Hf6lmyW-CBfs7nkOV)
 
 - Full Coursera Course:
 
@@ -1256,7 +1263,7 @@ Graphs can be used to represent many problems in computer science, so this secti
 
 - [ ] Series of 2-3 minutes short subject videos (23 videos)
   - [Videos](https://www.youtube.com/watch?v=r4r1DZcx1cM&list=PLmVb1OknmNJuC5POdcDv5oCS7_OUkDgpj&index=22)
-- [ ] Series of 2-5 minutes short subject videos - Michael Sambol (18 videos):
+- [ ] Series of 2-5 minutes short subject videos - Michael Sambol (38 videos):
   - [Videos](https://www.youtube.com/channel/UCzDJwLWoYCUQowF_nG3m5OQ)
 - [ ] [Sedgewick Videos - Algorithms I](https://www.coursera.org/learn/algorithms-part1)
 - [ ] [Sedgewick Videos - Algorithms II](https://www.coursera.org/learn/algorithms-part2)
@@ -1717,6 +1724,103 @@ You're never really done.
   - [CS 61B Lecture 39: Augmenting Data Structures](https://archive.org/details/ucberkeley_webcast_zksIj9O8_jc)
 
 - ### Balanced search trees
+
+  - Know at least one type of balanced binary tree (and know how it's implemented):
+  - "Among balanced search trees, AVL and 2/3 trees are now passé, and red-black trees seem to be more popular.
+    A particularly interesting self-organizing data structure is the splay tree, which uses rotations
+    to move any accessed key to the root." - Skiena
+  - Of these, I chose to implement a splay tree. From what I've read, you won't implement a
+    balanced search tree in your interview. But I wanted exposure to coding one up
+    and let's face it, splay trees are the bee's knees. I did read a lot of red-black tree code
+    - Splay tree: insert, search, delete functions
+      If you end up implementing red/black tree try just these:
+    - Search and insertion functions, skipping delete
+  - I want to learn more about B-Tree since it's used so widely with very large data sets
+  - [Self-balancing binary search tree](https://en.wikipedia.org/wiki/Self-balancing_binary_search_tree)
+
+  - **AVL trees**
+
+    - In practice:
+      From what I can tell, these aren't used much in practice, but I could see where they would be:
+      The AVL tree is another structure supporting O(log n) search, insertion, and removal. It is more rigidly
+      balanced than red–black trees, leading to slower insertion and removal but faster retrieval. This makes it
+      attractive for data structures that may be built once and loaded without reconstruction, such as language
+      dictionaries (or program dictionaries, such as the opcodes of an assembler or interpreter)
+    - [MIT AVL Trees / AVL Sort (video)](https://www.youtube.com/watch?v=FNeL18KsWPc&list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb&index=6)
+    - [AVL Trees (video)](https://www.coursera.org/learn/data-structures/lecture/Qq5E0/avl-trees)
+    - [AVL Tree Implementation (video)](https://www.coursera.org/learn/data-structures/lecture/PKEBC/avl-tree-implementation)
+    - [Split And Merge](https://www.coursera.org/learn/data-structures/lecture/22BgE/split-and-merge)
+
+  - **Splay trees**
+
+    - In practice:
+      Splay trees are typically used in the implementation of caches, memory allocators, routers, garbage collectors,
+      data compression, ropes (replacement of string used for long text strings), in Windows NT (in the virtual memory,
+      networking and file system code) etc
+    - [CS 61B: Splay Trees (video)](https://archive.org/details/ucberkeley_webcast_G5QIXywcJlY)
+    - MIT Lecture: Splay Trees:
+      - Gets very mathy, but watch the last 10 minutes for sure.
+      - [Video](https://www.youtube.com/watch?v=QnPl_Y6EqMo)
+
+  - **Red/black trees**
+
+    - These are a translation of a 2-3 tree (see below).
+    - In practice:
+      Red–black trees offer worst-case guarantees for insertion time, deletion time, and search time.
+      Not only does this make them valuable in time-sensitive applications such as real-time applications,
+      but it makes them valuable building blocks in other data structures which provide worst-case guarantees;
+      for example, many data structures used in computational geometry can be based on red–black trees, and
+      the Completely Fair Scheduler used in current Linux kernels uses red–black trees. In the version 8 of Java,
+      the Collection HashMap has been modified such that instead of using a LinkedList to store identical elements with poor
+      hashcodes, a Red-Black tree is used
+    - [Aduni - Algorithms - Lecture 4 (link jumps to starting point) (video)](https://youtu.be/1W3x0f_RmUo?list=PLFDnELG9dpVxQCxuD-9BSy2E7BWY3t5Sm&t=3871)
+    - [Aduni - Algorithms - Lecture 5 (video)](https://www.youtube.com/watch?v=hm2GHwyKF1o&list=PLFDnELG9dpVxQCxuD-9BSy2E7BWY3t5Sm&index=5)
+    - [Red-Black Tree](https://en.wikipedia.org/wiki/Red%E2%80%93black_tree)
+    - [An Introduction To Binary Search And Red Black Tree](https://www.topcoder.com/thrive/articles/An%20Introduction%20to%20Binary%20Search%20and%20Red-Black%20Trees)
+    - [[Review] Red-Black Trees (playlist) in 30 minutes (video)](https://www.youtube.com/playlist?list=PL9xmBV_5YoZNqDI8qfOZgzbqahCUmUEin)
+
+  - **2-3 search trees**
+
+    - In practice:
+      2-3 trees have faster inserts at the expense of slower searches (since height is more compared to AVL trees).
+    - You would use 2-3 tree very rarely because its implementation involves different types of nodes. Instead, people use Red Black trees.
+    - [23-Tree Intuition and Definition (video)](https://www.youtube.com/watch?v=C3SsdUqasD4&list=PLA5Lqm4uh9Bbq-E0ZnqTIa8LRaL77ica6&index=2)
+    - [Binary View of 23-Tree](https://www.youtube.com/watch?v=iYvBtGKsqSg&index=3&list=PLA5Lqm4uh9Bbq-E0ZnqTIa8LRaL77ica6)
+    - [2-3 Trees (student recitation) (video)](https://www.youtube.com/watch?v=TOb1tuEZ2X4&index=5&list=PLUl4u3cNGP6317WaSNfmCvGym2ucw3oGp)
+
+  - **2-3-4 Trees (aka 2-4 trees)**
+
+    - In practice:
+      For every 2-4 tree, there are corresponding red–black trees with data elements in the same order. The insertion and deletion
+      operations on 2-4 trees are also equivalent to color-flipping and rotations in red–black trees. This makes 2-4 trees an
+      important tool for understanding the logic behind red–black trees, and this is why many introductory algorithm texts introduce
+      2-4 trees just before red–black trees, even though **2-4 trees are not often used in practice**.
+    - [CS 61B Lecture 26: Balanced Search Trees (video)](https://archive.org/details/ucberkeley_webcast_zqrqYXkth6Q)
+    - [Bottom Up 234-Trees (video)](https://www.youtube.com/watch?v=DQdMYevEyE4&index=4&list=PLA5Lqm4uh9Bbq-E0ZnqTIa8LRaL77ica6)
+    - [Top Down 234-Trees (video)](https://www.youtube.com/watch?v=2679VQ26Fp4&list=PLA5Lqm4uh9Bbq-E0ZnqTIa8LRaL77ica6&index=5)
+
+  - **N-ary (K-ary, M-ary) trees**
+
+    - note: the N or K is the branching factor (max branches)
+    - binary trees are a 2-ary tree, with branching factor = 2
+    - 2-3 trees are 3-ary
+    - [K-Ary Tree](https://en.wikipedia.org/wiki/K-ary_tree)
+
+  - **B-Trees**
+
+    - Fun fact: it's a mystery, but the B could stand for Boeing, Balanced, or Bayer (co-inventor).
+    - In Practice:
+      B-Trees are widely used in databases. Most modern filesystems use B-trees (or Variants). In addition to
+      its use in databases, the B-tree is also used in filesystems to allow quick random access to an arbitrary
+      block in a particular file. The basic problem is turning the file block i address into a disk block
+      (or perhaps to a cylinder-head-sector) address
+    - [B-Tree](https://en.wikipedia.org/wiki/B-tree)
+    - [B-Tree Datastructure](http://btechsmartclass.com/data_structures/b-trees.html)
+    - [Introduction to B-Trees (video)](https://www.youtube.com/watch?v=I22wEC1tTGo&list=PLA5Lqm4uh9Bbq-E0ZnqTIa8LRaL77ica6&index=6)
+    - [B-Tree Definition and Insertion (video)](https://www.youtube.com/watch?v=s3bCdZGrgpA&index=7&list=PLA5Lqm4uh9Bbq-E0ZnqTIa8LRaL77ica6)
+    - [B-Tree Deletion (video)](https://www.youtube.com/watch?v=svfnVhJOfMc&index=8&list=PLA5Lqm4uh9Bbq-E0ZnqTIa8LRaL77ica6)
+    - [MIT 6.851 - Memory Hierarchy Models (video)](https://www.youtube.com/watch?v=V3omVLzI0WE&index=7&list=PLUl4u3cNGP61hsJNdULdudlRL493b-XZf) - covers cache-oblivious B-Trees, very interesting data structures - the first 37 minutes are very technical, may be skipped (B is block size, cache line size)
+    - [[Review] B-Trees (playlist) in 26 minutes (video)](https://www.youtube.com/playlist?list=PL9xmBV_5YoZNFPPv98DjTdD9X6UI9KMHz)
 
   - Know at least one type of balanced binary tree (and know how it's implemented):
   - "Among balanced search trees, AVL and 2/3 trees are now passé, and red-black trees seem to be more popular.
